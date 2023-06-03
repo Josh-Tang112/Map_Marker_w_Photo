@@ -7,9 +7,9 @@
 
 Use git clone or download the zip from Github to obtain the code.  
 The Jupyter notebook demonstrates how the code works. The Python script is the standard routine. To use the Python script, run
-$$
-\text{python3 map\_marker.py folder\_path\_1 folder\_path\_2 ... }
-$$
+~~~
+python3 map\_marker.py folder\_path\_1 folder\_path\_2 ... 
+~~~
 where folder_path is the file path to the folder containing the pictures you are interested in putting on a map.
 
 ## Result
