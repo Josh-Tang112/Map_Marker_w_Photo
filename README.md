@@ -13,9 +13,9 @@ $$
 where folder_path is the file path to the folder containing the pictures you are interested in putting on a map.
 
 ## Result
-![Result HTML](./images/result1.png)
-The above image shows the result of the code.
-![Produced HTML](./images/result2.png)
+![Result HTML](./images/result1.png)  
+The above image shows the result of the code.  
+![Produced HTML](./images/result2.png)  
 After the software finished running, you'll see things like "0th_map.html" or "1th_map.html." These are the html produced by the Python script. They will locate **AT** the folder from which you run the Python script. Use a browser to see the resulting html. 
 
 ## Note:
