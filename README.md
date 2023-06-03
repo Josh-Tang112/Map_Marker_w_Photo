@@ -11,7 +11,7 @@ Before you run the Python script, make sure that you have Python installed, then
 ~~~
 python3 map\_marker.py folder\_path\_1 folder\_path\_2 ... 
 ~~~
-where folder_path is the file path to the folder containing the pictures you are interested in putting on a map.
+where folder_path is the file path to the folder containing the pictures you are interested in putting on a map. <br>
 If you don't want to run the script on your local computer, you can run the Jupyter notebook in Google Colab by clicking the "Open in Colab" when you open the notebook in Github. Don't forget to upload the pictures to Colab when you do so. 
 
 ## Result
