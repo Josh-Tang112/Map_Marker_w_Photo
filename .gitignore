@@ -1,0 +1,4 @@
+*.jpg
+*.JPG
+!jpg/.gitkeep
+__*/
