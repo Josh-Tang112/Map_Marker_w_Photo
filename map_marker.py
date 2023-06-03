@@ -58,7 +58,7 @@ def get_coord(gps):
     return (lat_value, lon_value)
 
 def add_to_map(m,iname,coord):
-    encoded = base64.b64encode(open(iname, 'rb').read())
+    encoded = base64.b64encode(open(iname + ".temp", 'rb').read())
     html = '<img src="data:image/png;base64,{}">'.format
     iframe = IFrame(html(encoded.decode('UTF-8')), width=370, height=370)
 
@@ -69,7 +69,8 @@ def add_to_map(m,iname,coord):
 if __name__ == "__main__":
     if len(sys.argv[1:]) == 0:
         print("You need to provide file path to folders containing pictures in this format:")
-        print("python3 map_marker.py file_path1 file_path2 ...")
+        print("python3 map_marker.py folder_path1 folder_path2 ...")
+    c = 0
     for path in sys.argv[1:]:
         flst = os.listdir(path)
         flst = [os.path.join(path,f) for f in flst if f.lower().endswith('.jpg')]
@@ -79,3 +80,8 @@ if __name__ == "__main__":
         lst_coord = [get_coord(get_GPS(f)) for f in flst]
         center = (statistics.mean([i[0] for i in lst_coord if len(i) > 0]), statistics.mean([i[1] for i in lst_coord if len(i) > 0]))
         m = folium.Map(location = center, zoom_start = 6, tiles = "OpenStreetMap")
+        for i in range(len(flst)):
+            add_to_map(m,flst[i],lst_coord[i])
+        m.save(f"{c}th_map.html")
+        c += 1
+        
