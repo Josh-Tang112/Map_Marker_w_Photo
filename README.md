@@ -6,11 +6,13 @@
 ## Installation
 
 Use git clone or download the zip from Github to obtain the code.  
-The Jupyter notebook demonstrates how the code works. The Python script is the standard routine. To use the Python script, run
+The Jupyter notebook demonstrates how the code works. The Python script is the standard routine. <br>
+Before you run the Python script, make sure that you have Python installed, then execute installer.bat to install the dependencies. To use the Python script, run
 ~~~
 python3 map\_marker.py folder\_path\_1 folder\_path\_2 ... 
 ~~~
 where folder_path is the file path to the folder containing the pictures you are interested in putting on a map.
+If you don't want to run the script on your local computer, you can run the Jupyter notebook in Google Colab by clicking the "Open in Colab" when you open the notebook in Github. Don't forget to upload the pictures to Colab when you do so. 
 
 ## Result
 ![Result HTML](./images/result1.png)  
