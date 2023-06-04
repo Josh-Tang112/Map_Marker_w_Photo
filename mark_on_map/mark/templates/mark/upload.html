@@ -1,0 +1,14 @@
+<h1> Mark The Map </h1>
+<form action="{% url 'mark' %}" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label>Upload the photos you want to mark on the map. Remeber that only photos with GPS 
+        tracking turned on at the moment of creating will be shown on the map. Only accepts JPG
+        photos. </label> <br>
+    <input
+        type="file"
+        id="upload"
+        name="upload"
+        accept=".jpg, .jpeg, .JPG"
+        multiple>
+    <input type="submit" value="Upload">
+</form>
