@@ -83,6 +83,7 @@ if __name__ == "__main__":
         for i in range(len(flst)):
             if len(lst_coord[i]) > 0:
                 add_to_map(m,flst[i],lst_coord[i])
+                os.remove(flst[i]+ ".temp")
         m.save(f"{c}th_map.html")
         c += 1
         
