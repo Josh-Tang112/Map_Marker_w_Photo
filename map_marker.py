@@ -81,7 +81,8 @@ if __name__ == "__main__":
         center = (statistics.mean([i[0] for i in lst_coord if len(i) > 0]), statistics.mean([i[1] for i in lst_coord if len(i) > 0]))
         m = folium.Map(location = center, zoom_start = 6, tiles = "OpenStreetMap")
         for i in range(len(flst)):
-            add_to_map(m,flst[i],lst_coord[i])
+            if len(lst_coord[i]) > 0:
+                add_to_map(m,flst[i],lst_coord[i])
         m.save(f"{c}th_map.html")
         c += 1
         

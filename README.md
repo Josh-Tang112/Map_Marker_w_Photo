@@ -20,6 +20,20 @@ The above image shows the result of the code.
 ![Produced HTML](./images/result2.png)  
 After the software finished running, you'll see things like "0th_map.html" or "1th_map.html." These are the html produced by the Python script. They will locate **AT** the folder from which you run the Python script. Use a browser to see the resulting html. 
 
+## Host A Website
+A Django project that allows you to host this software as a website is provided in the mark_on_map folder. To start the web server, go to the mark_on_map folder and run
+~~~
+python3 manage.py runserver 0.0.0.0:{port}
+~~~
+where {port} will be replaced by the port number you desire. If you have no idea about port, just use 8000. <br>
+After the server is running, open your browser and type 
+~~~
+IP:{port}/mark
+~~~
+in the address bar, where IP is you IP address or domain name and {port} is the number you entered above. <br>
+Use Control + C to stop the server. 
+WARNING: the provided Django code is not a production server. There are no guarantee for the security of the server. s
+
 ## Note:
 
 1. Adjustment of photo metadata in IPhone will not be reflected in the EXIF data despite what some articles have told you.
