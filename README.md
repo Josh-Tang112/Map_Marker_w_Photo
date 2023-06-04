@@ -21,7 +21,13 @@ The above image shows the result of the code.
 After the software finished running, you'll see things like "0th_map.html" or "1th_map.html." These are the html produced by the Python script. They will locate **AT** the folder from which you run the Python script. Use a browser to see the resulting html. 
 
 ## Host A Website
-A Django project that allows you to host this software as a website is provided in the mark_on_map folder. To start the web server, go to the mark_on_map folder and run
+A Django project that allows you to host this software as a website is provided in the mark_on_map folder. <br>
+Before you can start a Django server, run 
+~~~
+python3 -m pip install django
+~~~
+to install django first. <br>
+To start the web server, go to the mark_on_map folder and run
 ~~~
 python3 manage.py runserver 0.0.0.0:{port}
 ~~~
