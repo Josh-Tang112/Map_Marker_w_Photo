@@ -3,7 +3,7 @@
 
   
 
-## Installation
+## Installation and How to Use
 
 Use git clone or download the zip from Github to obtain the code.  
 The Jupyter notebook demonstrates how the code works. The Python script is the standard routine. <br>
