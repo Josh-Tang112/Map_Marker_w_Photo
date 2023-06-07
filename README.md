@@ -6,7 +6,7 @@
 ## Installation and How to Use
 
 Use git clone or download the zip from Github to obtain the code.  
-The Jupyter notebook demonstrates how the code works. The Python script is the standard routine. <br>
+The Jupyter notebook Marker.ipynb demonstrates how the code works. The Python script map_marker.py is the standard routine. <br>
 Before you run the Python script, make sure that you have Python installed, then execute installer.bat to install the dependencies. To use the Python script, run
 ~~~
 python3 map_marker.py folder_path_1 folder_path_2 ... 
